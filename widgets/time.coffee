@@ -9,4 +9,4 @@ style:"""
 """
 
 render: (output) ->
-  "<div class='screen'><div class='right'><i class='nf nf-mdi-clock'></i>#{output}</div></div>"
+  "<div class='screen'><div class='tile'><i class='nf nf-mdi-clock'></i>#{output}</div></div>"

@@ -28,5 +28,6 @@ if(charging != ""):
 else:
     icon = 'nf-mdi-battery_' + str(roundup(out,  ""))
 
+out = str(int(out)) + "%"
 #print('<i class=\"nf '+ icon + '\"' + style + '\"></i>' + ' <i' + style + '\">' + str(out) +'%</i>')
-print('<i class=\"nf '+ icon + '\"' + style + '\"> ' +  str(out) + '%</i>')
+print('<i class=\"nf '+ icon + '\"' + style + '\"></i><span>' + str(out) + "</span>")

@@ -23,5 +23,5 @@ style: """
 """
 
 render: (output) -> """
-  <div class='screen'><div class='bleft1'><span class='icon'></span>#{output}</div></div>
+  <div class='screen'><div class='tile'>#{output}</div></div>
 """
