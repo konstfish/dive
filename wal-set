@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+osascript <<EOD
+  tell application "Übersicht"
+  	refresh widget id "Pecan-background-coffee"
+  end tell
+EOD
