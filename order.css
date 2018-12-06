@@ -1,0 +1,37 @@
+.battery{
+
+}
+
+.connecion{
+  order: 2;
+}
+
+.cpu{
+  order: 3;
+}
+
+.date{
+  order: 4;
+}
+
+.mem{
+  order: 5;
+}
+
+.network{
+  order: 6;
+}
+
+.spotify{
+  order: 7;
+}
+
+.time{
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.vol{
+  order: 9;
+}
