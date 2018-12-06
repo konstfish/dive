@@ -15,13 +15,10 @@ echo "<span class='title'>$theArtist - </span><class='artist'>$theName</>" || ec
 
 refreshFrequency: 6000
 
-style: """
-.icon
-  color: #000000;
-  font-size: 12px;
-  margin-right: 2px;
-"""
-
 render: (output) -> """
-  <div class='screen'><div class='tile'>#{output}</div></div>
+  <div class='screen'>
+    <div class='tile spotify'>
+      #{output}
+    </div>
+  </div>
 """

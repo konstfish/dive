@@ -15,18 +15,13 @@
   --title-org-color: #e84118;
 }
 
+.invis{
+  visibility: hidden;
+  font-size: 0px;
+}
+
 #__uebersicht {
-  list-style: none;
-
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  -webkit-flex-flow: row wrap;
-  justify-content: space-around;
-  align-content: center;
+  position: relative;
 }
 
 .screen {
@@ -39,13 +34,10 @@ i {
 }
 
 .tile {
-
-  margin-top: 1px;
-  margin-left: 6px;
   font-family: 'Hack';
   font-size: 14px;
 
-  order: <integer>;
+  order: integer;
 
   color: var(--main-txt-color);
   background-color: var(--main-tile-color);
