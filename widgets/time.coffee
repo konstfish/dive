@@ -4,7 +4,7 @@ refreshFrequency: 60000 # ms
 
 render: (output) ->
   "<div class='screen'>
-    <div class='tile time'>
+    <div class='tile' id='time'>
       <i class='nf nf-mdi-clock'></i>#{output}
     </div>
   </div>"

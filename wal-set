@@ -2,6 +2,6 @@
 
 osascript <<EOD
   tell application "Übersicht"
-  	refresh widget id "Pecan-background-coffee"
+  	refresh widget id "dive-widgets-background-coffee"
   end tell
 EOD

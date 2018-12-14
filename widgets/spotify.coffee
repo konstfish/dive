@@ -17,7 +17,7 @@ refreshFrequency: 6000
 
 render: (output) -> """
   <div class='screen'>
-    <div class='tile spotify'>
+    <div class='tile' id='spotify'>
       #{output}
     </div>
   </div>
