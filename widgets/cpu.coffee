@@ -4,7 +4,7 @@ refreshFrequency: 20000 # ms
 
 render: (output) ->
   "<div class='screen'>
-    <div class='tile cpu'>
+    <div class='tile' id='cpu'>
       <i class='nf nf-mdi-memory'></i>#{output}
     </div>
   </div>"

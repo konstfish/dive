@@ -4,7 +4,7 @@ refreshFrequency: 1000 # ms
 
 render: (output) ->
   "<div class='screen'>
-      <div class='tile vol'>
+      <div class='tile' id='vol'>
         <i class='fas fa-volume-up'></i>#{output}
       </div>
     </div>"
