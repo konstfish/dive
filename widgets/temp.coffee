@@ -1,4 +1,4 @@
-command: 'dive/scripts//osxcputmp'
+command: 'dive/scripts/osxcputmp'
 
 refreshFrequency: 300000 # ms
 

@@ -4,7 +4,7 @@ refreshFrequency: 5000 # ms
 
 render: (output) ->
   "<div class='container cpu'>
-      <div class='bend med red-dark'>
+      <div class='bend medium red-dark'>
         <div class='icon red-light'>
           <img src='dive/ics/9down.png' height='12'>
         </div>
