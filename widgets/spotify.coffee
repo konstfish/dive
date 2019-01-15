@@ -13,7 +13,7 @@ IFS='|' read -r theArtist theName theState <<<"$(osascript <<<'tell application 
 echo "<span class='title'>$theArtist - </span><class='artist'>$theName</>" || echo "Not Connected To Spotify"
 """
 
-refreshFrequency: 6000
+refreshFrequency: 600000
 
 render: (output) ->
   "<div class='container adjust'>
