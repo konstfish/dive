@@ -6,10 +6,10 @@ render: (output) ->
   "<div class='container adjust'>
       <div class='bend'>
         <div class='icon'>
-          <img src='dive/ics/#{output}' height='12'>
+          <img src='dive/ics/#{output}' width='12px'>
         </div>
         <div class='content'>
-          Name
+          NW
         </div>
       </div>
     </div>

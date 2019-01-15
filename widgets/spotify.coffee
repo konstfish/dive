@@ -16,12 +16,12 @@ echo "<span class='title'>$theArtist - </span><class='artist'>$theName</>" || ec
 refreshFrequency: 600000
 
 render: (output) ->
-  "<div class='container adjust'>
-      <div class='bend'>
-        <div class='icon'>
-          <img src='dive/ics/14note.png' width='10px'>
+  "<div class='container giga'>
+      <div class='bend bend-lft'>
+        <div class='icon icon-lft'>
+          <img src='dive/ics/14note.png' height='10px'>
         </div>
-        <div class='content'>
+        <div class='content content-lft'>
           #{output}
         </div>
       </div>

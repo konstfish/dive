@@ -1,3 +1,7 @@
+/*
+  DIVE WIDGET CSS SHEETS
+*/
+
 :root {
   --main-txt-color: #eef6eb;
 
@@ -54,6 +58,9 @@
   width: 90px !important;
 }
 
+.giga{
+  width: 220px !important;
+}
 
 .adjust{
 	width: auto !important;
@@ -65,7 +72,11 @@
 	width: 100%;
 	height: 22px;
 	transform: skew(20deg);
-	background-color: var(--main-tilebg-color);;
+	background-color: var(--main-tilebg-color);
+}
+
+.bend-lft {
+	transform: skew(-20deg) !important;
 }
 
 .content {
@@ -80,7 +91,10 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
 
+.content-lft{
+  transform: skew(20deg) !important;
 }
 
 .icon{
@@ -96,6 +110,10 @@
 
 	transform: skew(-20deg);
 	image-rendering: pixelated;
+}
+
+.icon-lft img{
+  transform: skew(20deg);
 }
 
 /*
@@ -123,11 +141,34 @@
 }
 
 #dive-widgets-mem-coffee{
-  right: 395px;
+  right: 410px;
 }
 
 #dive-widgets-cpu-coffee{
-  right: 495px;
+  right: 500px;
+}
+
+#dive-widgets-up-coffee{
+  right: 580px;
+  z-index: 1;
+}
+
+#dive-widgets-down-coffee{
+  right: 650px;
+  z-index: -1;
+}
+
+#dive-widgets-connection-coffee{
+  right: 710px;
+}
+
+
+/*
+LEFT
+*/
+
+#dive-widgets-spotify-coffee{
+  left: 10px;
 }
 
 
