@@ -4,12 +4,12 @@ refreshFrequency: 20000 # ms
 
 render: (output) ->
   "<div class='container cpu'>
-      <div class='bend'>
-        <div class='icon'>
+      <div class='bend medium ylw-dark'>
+        <div class='icon ylw-light'>
           <img src='dive/ics/6cpu.png' height='12'>
         </div>
         <div class='content'>
-          #{output}
+          #{output}<span style='padding-left:1spx;'>%</span>
         </div>
       </div>
     </div>
