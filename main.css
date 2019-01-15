@@ -1,6 +1,3 @@
-@import url("fonts/nerd.css");
-@font-face{font-family:'NerdFontsSymbols Nerd Font';src:url("fonts/Symbols-2048-em Nerd Font Complete.ttf") format("truetype");font-weight:400;font-style:normal}
-
 :root {
   --main-txt-color: #f5f6fa;
   --main-bg-color: #2f3640;
@@ -15,51 +12,72 @@
   --title-org-color: #e84118;
 }
 
-.screen {
-  /* display: flex; */
+.container{
+	width: 100px;
+  position: absolute;
 }
 
-#__uebersicht{
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-
-  /* This aligns items to the end line on main-axis */
-  -webkit-justify-content: flex-start;
-  -webkit-align-content: flex-end;
-
-  width: 100%;
-  height: 100%;
+.small{
+	width: 50px !important;
 }
 
-i {
-  padding-left: 4px;
-  padding-right: 4px;
+.adjust{
+	width: auto !important;
+	display: inline-block;
+	position: absolute;
+	left: 100px;
+	top: 4px;
 }
 
-.tile {
-  position: static !important;
-  font-family: 'Hack';
-  font-size: 14px;
-
-  height: auto;
-  width: auto;
-  padding: 2px 2px 2px 2px;
-
-  color: var(--main-txt-color);
-  background-color: var(--main-tile-color);
-
-  padding-left: 2px;
-  padding-right: 2px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-
-  /* border-bottom: 4px solid var(--tile-prp-color*/
-  border-radius: 5px;
+.bend {
+	width: 100%;
+	height: 22px;
+	transform: skew(20deg);
+	background: #555;
 }
 
-.bottom{
+.content {
+	padding-top: 4px;
+  padding-left: 28px;
+	padding-right: 5px;
+	transform: skew(-20deg);
 
+	font-size: 14px;
+	font-family: 'scientifica';
+  text-rendering: optimizeLegibility;
+}
+
+.icon{
+	height: 100%;
+	width: 22px;
+	background-color: #666;
+	float:left;
+}
+
+.icon img{
+	padding-top: 5px;
+	padding-left: 6.5px;
+
+	transform: skew(-20deg);
+	image-rendering: pixelated;
+}
+
+
+
+
+
+/*
+
+	ICON POSITIONS
+
+*/
+
+.headphones{
+	width: auto;
+	display: inline-block;
+}
+
+.battery{
+  left: 1px;
+  top: 100px;
 }
