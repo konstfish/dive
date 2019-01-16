@@ -10,13 +10,13 @@ IFS='|' read -r theArtist theName theState <<<"$(osascript <<<'tell application 
         set theState to player state as string
         return theArtist & "|" & theName & "|" & theState
     end tell')" &&
-echo "<span class='title'>$theArtist - </span><class='artist'>$theName</>" || echo "Not Connected To Spotify"
+echo "<span style='white-space: nowrap'>$theArtist - $theName </span>" || echo "<span style='white-space: nowrap'>Not Connected To Spotify</span>"
 """
 
 refreshFrequency: 600000
 
 render: (output) ->
-  "<div class='container giga'>
+  "<div class='container adjust'>
       <div class='bend bend-lft'>
         <div class='icon icon-lft'>
           <img src='dive/ics/14note.png' height='10px'>

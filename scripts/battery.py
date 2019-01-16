@@ -4,30 +4,22 @@ import subprocess
 import math
 import os
 
-def roundup(x, charg):
-    if int(x) <= 10 and charg != "":
-        return 20
-    else:
-        return int(math.ceil(int(x) / 10.0)) * 10
-
-out = os.popen("pmset -g batt").read()
-
-if("discharging" not in str(out)):
-    style = ' style=\"color: rgb(252, 252, 252) !important; '
-    charging = "charging"
-else:
-    style = ""
-    charging = ""
-
-out = os.popen("pmset -g batt | grep -o '[0-9]*%'").read()
-
+char = os.popen("pmset -g batt").read()
+out = os.popen("echo \'" + str(char).translate(None, "\n") + "\' | grep -o '[0-9]*%'").read()
 out = out.translate(None, '%')
 
-if(charging != ""):
-    icon = 'nf-mdi-battery_' + charging + "_" + str(roundup(out,  "t"))
-else:
-    icon = 'nf-mdi-battery_' + str(roundup(out,  ""))
+icon = ""
 
+if("discharging" not in str(char)):
+    icon = "19battery_charging.png"
+elif(int(out) < 10):
+    icon =  "18battery_empty.png"
+elif(int(out) < 35):
+    icon =  "18battery_low.png"
+elif(int(out) < 60):
+    icon =  "18battery_half.png"
+else:
+    icon =  "18battery_full.png"
 out = str(int(out)) + "%"
-#print('<i class=\"nf '+ icon + '\"' + style + '\"></i>' + ' <i' + style + '\">' + str(out) +'%</i>')
-print('<i class=\"nf '+ icon + '\"' + style + '\"></i><span>' + str(out) + "</span>")
+
+print("<img src='dive/ics/" + icon + "' height='12px'></div><div class='content'>" + str(out))
