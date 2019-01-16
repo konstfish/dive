@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
-
-osascript <<EOD
-  tell application "Übersicht"
-  	refresh widget id "dive-widgets-background-coffee"
-  end tell
-EOD

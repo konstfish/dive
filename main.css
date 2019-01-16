@@ -128,28 +128,29 @@
   right: 85px;
 }
 
-#dive-widgets-headphones-coffee{
-  right: 155px;
+#dive-widgets-connection-coffee{
+  right: 130px;
 }
 
+
 #dive-widgets-battery-coffee{
-  right: 225px;
+  right: 200px;
 }
 
 #dive-widgets-temp-coffee{
-  right: 315px;
+  right: 290px;
 }
 
 #dive-widgets-mem-coffee{
-  right: 410px;
+  right: 385px;
 }
 
 #dive-widgets-cpu-coffee{
-  right: 500px;
+  right: 475px;
 }
 
 #dive-widgets-up-coffee{
-  right: 580px;
+  right: 570px;
   z-index: 1;
 }
 
@@ -158,8 +159,8 @@
   z-index: -1;
 }
 
-#dive-widgets-connection-coffee{
-  right: 710px;
+#dive-widgets-headphones-coffee{
+  right: 720px;
 }
 
 
