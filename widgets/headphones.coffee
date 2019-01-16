@@ -1,4 +1,4 @@
-command: 'python dive/scripts/battery.py'
+command: ''
 
 refreshFrequency: 300000 # ms
 
@@ -9,7 +9,7 @@ render: (output) ->
           <img src='dive/ics/1headphones.png' height='12px'>
         </div>
         <div class='content'>
-          #{output}
+          uff
         </div>
       </div>
     </div>
