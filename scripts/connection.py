@@ -6,8 +6,10 @@ ADAPTER_NAME = "USB 10/100/1000 LAN"
 out = os.popen('dive/scripts/./interfaces').read()
 
 if(ADAPTER_NAME in out):
-    print('12ethernet.png')
+    print("<img src='dive/ics/12ethernet.png' width='12px'></div><div class='content'>")
 elif("Wi-Fi" in out):
-    print('11wifi.png')
+    #name = os.popen("/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport -I | awk '/ SSID/ {print substr($0, index($0, $2))}'").read()
+    name = ""
+    print("<img src='dive/ics/11wifi.png' width='12px'></div><div class='content'>" + name)
 else:
-    print('<i class="nf nf-mdi-wifi_off"></i>')
+    print("<img src='dive/ics/11wifi_off.png' width='12px'></div><div class='content'>")
