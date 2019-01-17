@@ -39,8 +39,9 @@
 }
 
 .vsmall{
-  width: 40px !important;
-  display: inline-block;
+  width: 70px !important;
+	display: inline-block;
+	position: absolute;
 }
 
 .small{
@@ -180,6 +181,7 @@ LEFT
 #airpodspadding{
   padding-left: 10px;
 }
+
 
 
 /*
