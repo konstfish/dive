@@ -27,8 +27,9 @@ if [[ "${CONNECTED}" ]]; then
     [[ ! -z "${!info}" ]] && OUTPUT="${OUTPUT} $(awk '/BatteryPercent/{print substr($0,15)": "}'<<<"${info}")${!info}%"
   done
    printf "%s\\n" "${AIRPOD_ICON} ${OUTPUT}"
+   echo
 else
-  printf "%s Not Connected\\n" "${OUTPUT}"
+  echo "not_connected"
 fi
 
 exit 0
