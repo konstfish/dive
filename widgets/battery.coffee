@@ -1,6 +1,6 @@
 command: 'python dive/scripts/battery.py'
 
-refreshFrequency: 30000 # ms
+refreshFrequency: 30 * 1000 # ms
 
 render: (output) ->
   "<div class='container small battery'>

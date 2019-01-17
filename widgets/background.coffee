@@ -1,4 +1,4 @@
-refreshFrequency: 100000
+refreshFrequency: 100 * 1000
 
 render: () ->
     return '''

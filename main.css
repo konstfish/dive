@@ -38,6 +38,11 @@
   position: absolute;
 }
 
+.vsmall{
+  width: 40px !important;
+  display: inline-block;
+}
+
 .small{
 	width: 60px !important;
 }
@@ -159,7 +164,7 @@
   z-index: -1;
 }
 
-#dive-widgets-headphones-coffee{
+#dive-widgets-vpn-coffee{
   right: 720px;
 }
 
@@ -170,6 +175,10 @@ LEFT
 
 #dive-widgets-spotify-coffee{
   left: 10px;
+}
+
+#airpodspadding{
+  padding-left: 10px;
 }
 
 

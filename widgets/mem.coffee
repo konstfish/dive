@@ -1,6 +1,6 @@
 command: "dive/scripts/mem.sh"
 
-refreshFrequency: 15000 # ms
+refreshFrequency: 15 * 1000 # ms
 
 render: (output) ->
   "<div class='container big'>

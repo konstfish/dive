@@ -1,6 +1,6 @@
 command: "date +\"%a, %b %d\""
 
-refreshFrequency: 100000
+refreshFrequency: 10 * 1000
 
 render: (output) ->
 "<div class='container date'>
