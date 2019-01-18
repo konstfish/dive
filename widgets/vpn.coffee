@@ -1,4 +1,4 @@
-command: ''
+command: 'dive/scripts/./vpn'
 
 refreshFrequency: 30 * 1000 # ms
 
@@ -9,7 +9,7 @@ render: (output) ->
           <img src='dive/ics/7vpn.png' height='12px'>
         </div>
         <div class='content'>
-          OFF
+          #{output}
         </div>
       </div>
     </div>

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if scutil --nc list | grep Connected &>/dev/null 2>&1; then
+  echo "ON"
+else
+  echo "OFF"
+fi
