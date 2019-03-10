@@ -1,0 +1,167 @@
+@import url("colors.css");
+
+/*
+  DIVE WIDGET CSS SHEET
+*/
+
+.container{
+  padding-top: 3px;
+	width: 100px;
+  position: absolute;
+}
+
+.vsmall{
+  width: 70px !important;
+	display: inline-block;
+	position: absolute;
+}
+
+.small{
+	width: 60px !important;
+}
+
+.lmao{
+	width: 65px !important;
+}
+
+.med{
+  width: 70px !important;
+}
+
+.medium{
+	width: 80px !important;
+}
+
+.big{
+	width: 85px !important;
+}
+
+.mega{
+  width: 90px !important;
+}
+
+.massive{
+  width: 95px !important;
+}
+
+.giga{
+  width: 220px !important;
+}
+
+.adjust{
+	width: auto !important;
+	display: inline-block;
+	position: absolute;
+}
+
+.bend {
+  border-radius: 4px;
+
+	width: 100%;
+	height: 22px;
+	background-color: var(--main-tilebg-color);
+}
+
+.bend-lft {
+
+}
+
+.content {
+	padding-top: 4px;
+  padding-left: 32px;
+	padding-right: 5px;
+	/* transform: skew(-20deg); */
+
+	font-size: 15px;
+  color: var(--main-txt-color);
+	font-family: 'scientifica';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.content-lft{
+  /* transform: skew(20deg) !important; */
+}
+
+.icon{
+  border-radius: 4px;
+
+	height: 100%;
+	width: 24px;
+	background-color: var(--main-tile-color);
+	float:left;
+}
+
+.icon img{
+	padding-top: 5px;
+	padding-left: 7.25px;
+
+	/* transform: skew(-20deg); */
+	image-rendering: pixelated;
+}
+
+.icon-lft img{
+  /* transform: skew(20deg); */
+}
+
+/*
+
+	ICON POSITIONS
+
+  spacing = 10px
+
+*/
+
+#dive-widgets-time-coffee{
+  right: 85px;
+}
+
+#dive-widgets-connection-coffee{
+  right: 130px;
+}
+
+#dive-widgets-battery-coffee{
+  right: 205px;
+}
+
+#dive-widgets-temp-coffee{
+  right: 295px;
+}
+
+#dive-widgets-mem-coffee{
+  right: 395px;
+}
+
+#dive-widgets-cpu-coffee{
+  right: 485px;
+}
+
+#dive-widgets-up-coffee{
+  right: 580px;
+  z-index: 1;
+}
+
+#dive-widgets-down-coffee{
+  right: 660px;
+  z-index: -1;
+}
+
+#dive-widgets-vpn-coffee{
+  right: 730px;
+}
+
+
+/*
+LEFT
+*/
+
+#dive-widgets-spotify-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+#airpodspadding{
+  padding-left: 10px;
+  float: left;
+}

@@ -1,8 +1,8 @@
-refreshFrequency: 100 * 1000
+refreshFrequency: 100 * 1000000000
 
 render: () ->
     return '''
-    <link rel="stylesheet" type="text/css" href="/dive/main.css" />
+    <link rel="stylesheet" type="text/css" href="/dive/styles/main.css" />
 
     <div class="background"></div>
     '''

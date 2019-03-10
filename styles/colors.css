@@ -1,0 +1,87 @@
+:root {
+  --main-txt-color: #eef6eb;
+
+  --tile-grn: #475b4e;
+  --tile-grn-select: #475b4e;
+
+  --main-bg-color: #475b4e;
+
+  --main-tilebg-color: #2f3640;
+  --main-tile-color: #495163;
+
+  --tile-org-dark: #88685F;
+  --tile-org-light: #BD7D6D;
+
+  --tile-grn-dark: #4E504E;
+  --tile-grn-light: #5E7163;
+
+  --tile-ylw-dark: #626059;
+  --tile-ylw-light: #8b8367;
+
+  --tile-blu-dark: #3b4549;
+  --tile-blu-light: #445d67;
+
+  --tile-red-dark: #4e3c43;
+  --tile-red-light: #6e4555;
+
+  --tile-lgren-dark: #6d726e;
+  --tile-lgreen-light: #7fa286;
+}
+
+/*
+
+COLORS
+
+*/
+
+.org-light{
+  background-color: var(--tile-org-light) !important;
+}
+
+.org-dark{
+  background-color: var(--tile-org-dark) !important;
+}
+
+.grn-light{
+  background-color: var(--tile-grn-light) !important;
+}
+
+.grn-dark{
+  background-color: var(--tile-grn-dark) !important;
+}
+
+.lgrn-light{
+  background-color: var(--tile-lgrn-light) !important;
+}
+
+.lgrn-dark{
+  background-color: var(--tile-lgrn-dark) !important;
+}
+
+.blu-light{
+  background-color: var(--tile-blu-light) !important;
+}
+
+.blu-dark{
+  background-color: var(--tile-blu-dark) !important;
+}
+
+.ylw-light{
+  background-color: var(--tile-ylw-light) !important;
+}
+
+.ylw-dark{
+  background-color: var(--tile-ylw-dark) !important;
+}
+
+.red-light{
+  background-color: var(--tile-red-light) !important;
+}
+
+.red-dark{
+  background-color: var(--tile-red-dark) !important;
+}
+
+.main-bg{
+
+}
