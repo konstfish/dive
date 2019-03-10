@@ -1,6 +1,6 @@
 command: "date +\"%H%:%M\""
 
-refreshFrequency: 50 * 1000 # ms
+refreshFrequency: 50000
 
 render: (output) ->
   "<div class='container adjust'>

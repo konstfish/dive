@@ -1,6 +1,6 @@
 command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"%.2f\",s/8);}'"
 
-refreshFrequency: 20 * 1000 # ms
+refreshFrequency: 20000
 
 render: (output) ->
   "<div class='container cpu'>

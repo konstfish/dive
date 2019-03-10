@@ -1,6 +1,6 @@
 command: "python dive/scripts/connection.py"
 
-refreshFrequency: 10 * 1000
+refreshFrequency: 10000
 
 render: (output) ->
   "<div class='container adjust'>
