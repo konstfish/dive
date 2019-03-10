@@ -1,6 +1,6 @@
 command: "dive/scripts/./airpods.py"
 
-refreshFrequency: 20 * 1000 # ms
+refreshFrequency: 10000
 
 render: (output) ->
   "

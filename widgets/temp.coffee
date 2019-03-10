@@ -1,6 +1,6 @@
 command: 'dive/scripts/osxcputmp'
 
-refreshFrequency: 30 * 1000 # ms
+refreshFrequency: 30000
 
 render: (output) ->
   "<div class='container medium battery'>

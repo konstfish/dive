@@ -1,6 +1,6 @@
 command: "bash dive/scripts/down"
 
-refreshFrequency: 5 * 1000 # ms
+refreshFrequency: 5000
 
 render: (output) ->
   "<div class='container cpu'>

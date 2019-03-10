@@ -1,6 +1,6 @@
 command: 'dive/scripts/./vpn'
 
-refreshFrequency: 30 * 1000 # ms
+refreshFrequency: 30000
 
 render: (output) ->
   "<div class='container small' id='1'>
