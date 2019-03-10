@@ -48,6 +48,10 @@
 	width: 60px !important;
 }
 
+.lmao{
+	width: 65px !important;
+}
+
 .med{
   width: 70px !important;
 }
@@ -62,6 +66,10 @@
 
 .mega{
   width: 90px !important;
+}
+
+.massive{
+  width: 95px !important;
 }
 
 .giga{
@@ -138,35 +146,34 @@
   right: 130px;
 }
 
-
 #dive-widgets-battery-coffee{
-  right: 200px;
+  right: 205px;
 }
 
 #dive-widgets-temp-coffee{
-  right: 290px;
+  right: 295px;
 }
 
 #dive-widgets-mem-coffee{
-  right: 385px;
+  right: 395px;
 }
 
 #dive-widgets-cpu-coffee{
-  right: 475px;
+  right: 485px;
 }
 
 #dive-widgets-up-coffee{
-  right: 570px;
+  right: 580px;
   z-index: 1;
 }
 
 #dive-widgets-down-coffee{
-  right: 650px;
+  right: 660px;
   z-index: -1;
 }
 
 #dive-widgets-vpn-coffee{
-  right: 720px;
+  right: 730px;
 }
 
 
@@ -175,14 +182,14 @@ LEFT
 */
 
 #dive-widgets-spotify-coffee{
-  left: 10px;
+  padding-left: 10px;
+  float: left;
 }
 
 #airpodspadding{
   padding-left: 10px;
+  float: left;
 }
-
-
 
 /*
 

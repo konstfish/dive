@@ -29,5 +29,4 @@ if("not_connected" not in str(out)):
     else:
         righthtml = "<div class='bend bend-lft vsmall adjust grn-dark'><div class='icon icon-lft grn-light'><img src='dive/ics/16airpodR.png' height='12'></div><div class='content content-lft'>" + right + "</div></div><span style='padding-right: 65px;'></span>"
 
-
-    print("<span id='aidpodpadding' style = 'padding-left: 240px;'></span>" + casehtml + lefthtml + righthtml)
+    print("<span id='aidpodpadding' style = 'float: left;'></span><span style = 'float: left;'>" + casehtml + lefthtml + righthtml + "</span>")

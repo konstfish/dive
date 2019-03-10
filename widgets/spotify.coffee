@@ -16,7 +16,7 @@ echo "<span style='white-space: nowrap'>$theArtist - $theName </span>" || echo "
 refreshFrequency: 30 * 1000
 
 render: (output) ->
-  "<div class='container adjust'>
+  "</div><div class='container adjust'>
       <div class='bend bend-lft'>
         <div class='icon icon-lft'>
           <img src='dive/ics/14note.png' height='10px'>

@@ -9,5 +9,4 @@ render: (output) ->
     </span>
    </div>
    <script>
-  document.getElementById('aidpodpadding').style.paddingLeft = document.getElementById('dive-widgets-spotify-coffee').children[0].offsetWidth + 9;
   </script>"
