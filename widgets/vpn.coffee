@@ -16,4 +16,4 @@ render: (output) ->
    </div>"
 
 #afterRender: (domEl) ->
-#  $(domEl).on 'click', '#1', => @run "open /Applications/Utilities/Terminal.app"
+#  $(domEl).on 'click', '#1', => @run "/dive/scripts/./vpn_connect"
