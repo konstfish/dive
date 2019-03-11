@@ -12,6 +12,7 @@ icon = ""
 
 if("discharging" not in str(char)):
     icon = "19battery_charging.png"
+    #os.system("dive/./refresh.py 1")
 elif(int(out) < 10):
     icon =  "18battery_empty.png"
 elif(int(out) < 35):

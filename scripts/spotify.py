@@ -11,11 +11,11 @@ try:
 except:
     spot = "Not Connected To Spotify"
 
+os.system('osascript -e \'tell application "Übersicht" to refresh widget id "dive-widgets-airpods-coffee"\'')
 if("Connected: No" in out):
     print("<div class='container adjust'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'>" + spot + "</div></div></div></div>")
 else:
     print("<div class='container adjust' style='padding-left: 202px; !important'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'>" + spot + "</div></div></div></div>")
-
 '''
 </div><div class='container adjust'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'>" + spot + "</div></div></div></div>
 '''
