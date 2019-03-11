@@ -31,4 +31,3 @@ if("not_connected" not in str(out)):
         righthtml = "<div class='container lmao' style='padding-left: 130px;'><div class='bend bend-lft grn-dark'><div class='icon icon-lft grn-light'><img src='dive/ics/16airpodR.png' height='12'></div><div class='content content-lft' style='width: 20px !important; margin-right: 0px !imporant;'>" + right + "</div></div></div>"
 
     print(casehtml + lefthtml + righthtml)
-os.system('osascript -e \'tell application "Übersicht" to refresh widget id "dive-widgets-spotify-coffee"\'')

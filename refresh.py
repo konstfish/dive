@@ -2,11 +2,11 @@
 
 import os, sys, time
 import re
-import threading
+import json
 
 do = sys.argv[1];
 
-widgets = os.listdir("widgets")
+widgets = os.listdir("dive/widgets/")
 
 for widget in widgets:
     f = open(("widgets/" + widget), "r")
@@ -27,9 +27,3 @@ for widget in widgets:
     f = open(("widgets/" + widget), "w+")
     f.write(txt)
     f.close()
-
-'''
-f= open("tmp.html","w+")
-f.write(html)
-f.close()
-'''
