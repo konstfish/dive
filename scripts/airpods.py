@@ -11,7 +11,9 @@ out = os.popen('dive/scripts/./battfetch').read()
 if("not_connected" not in str(out)):
     case = substring_after(out, "Case: ")
     case = (case[:3])
-    if(str(case[2]) != "%"):
+    if(str(case) == "0% "):
+        casehtml = "<div class='container small'><div class='bend bend-lft vsmall grn-dark'><div class='icon icon-lft grn-light'><img src='dive/ics/17airpodC.png' height='12'></div><div class='content content-lft'>100%</div></div><span style='padding-right: 65px;'></span></div>"
+    elif(str(case[2]) != "%"):
         casehtml = "<div class='container small'><div class='bend bend-lft vsmall grn-dark'><div class='icon icon-lft grn-light'><img src='dive/ics/17airpodC.png' height='12'></div><div class='content content-lft'>" + case + "%</div></div><span style='padding-right: 65px;'></span></div>"
     else:
         casehtml = "<div class='container small'><div class='bend bend-lft vsmall grn-dark'><div class='icon icon-lft grn-light'><img src='dive/ics/17airpodC.png' height='12'></div><div class='content content-lft'>" + case + "</div></div><span style='padding-right: 65px;'></span></div>"
