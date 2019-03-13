@@ -95,70 +95,25 @@
 	padding-left: 7.25px;
 
 	transform: skew(-20deg);
-	image-rendering: pixelated;
 }
 
 .icon-lft img{
   transform: skew(20deg);
 }
 
-/*
-
-	ICON POSITIONS
-
-  spacing = 10px
-
-*/
-
-#dive-widgets-time-coffee{
-  right: 85px;
+img{
+  image-rendering: pixelated;
 }
 
-#dive-widgets-connection-coffee{
-  right: 130px;
+#dive-widgets-background-coffee{
+  width: 100%;
+  z-index: -999;
 }
 
-#dive-widgets-battery-coffee{
-  right: 205px;
-}
-
-#dive-widgets-temp-coffee{
-  right: 295px;
-}
-
-#dive-widgets-mem-coffee{
-  right: 395px;
-}
-
-#dive-widgets-cpu-coffee{
-  right: 485px;
-}
-
-#dive-widgets-up-coffee{
-  right: 580px;
-  z-index: 1;
-}
-
-#dive-widgets-down-coffee{
-  right: 660px;
-  z-index: -1;
-}
-
-#dive-widgets-vpn-coffee{
-  right: 730px;
-}
-
-
-/*
-LEFT
-*/
-
-#dive-widgets-spotify-coffee{
-  padding-left: 10px;
-  float: left;
-}
-
-#dive-widgets-airpods-coffee{
-  padding-left: 10px;
-  float: left;
+.background{
+  margin-top: 3px;
+  width: 100%;
+  background-color: #FFFFFF;
+  height: 22px;
+  opacity: 0;
 }
