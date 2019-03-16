@@ -7,5 +7,5 @@ cd osx-cpu-temp
 make
 mv osx-cpu-temp ../scripts
 
-cd ..
-mv dive $HOME/Library/Application Support/Übersicht/widgets
+mkdir -p $HOME/Library/Application\ Support/Überischt/widgets/dive
+mv * $HOME/Library/Application\ Support/Übersicht/widgets/dive/
