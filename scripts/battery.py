@@ -1,5 +1,5 @@
 #!/usr/bin/python
-## get subprocess module
+
 import subprocess
 import math
 import os

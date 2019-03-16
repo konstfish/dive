@@ -1,4 +1,4 @@
-command: "dive/scripts/mem.sh"
+command: "dive/scripts/mem"
 
 refreshFrequency: 15000
 

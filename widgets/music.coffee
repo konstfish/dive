@@ -1,5 +1,5 @@
 command: """
-/usr/local/bin/python3 dive/scripts/spotify.py
+/usr/local/bin/python3 dive/scripts/music.py
 """
 
 refreshFrequency: 10000

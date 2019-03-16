@@ -49,7 +49,7 @@
 LEFT
 */
 
-#dive-widgets-spotify-coffee{
+#dive-widgets-music-coffee{
   padding-left: 10px;
   float: left;
 }
@@ -66,4 +66,5 @@ LEFT
 #dive-widgets-spaces-coffee{
   padding-left: 10px;
   float: left;
+  bottom: 28px;
 }
