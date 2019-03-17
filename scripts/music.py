@@ -42,6 +42,8 @@ osascript <<<'if isPlaying() is true then
 	on error e
 		return "Not connected to iTunes"
 	end try
+else
+    return "Nothing Playing"
 end if
 
 on isPlaying()

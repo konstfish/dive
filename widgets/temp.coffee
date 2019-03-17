@@ -1,4 +1,4 @@
-command: 'dive/scripts/osxcputmp'
+command: 'dive/scripts/osx-cpu-tmp'
 
 refreshFrequency: 30000
 
