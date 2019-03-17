@@ -4,7 +4,7 @@ import os,sys
 import subprocess
 
 device_name = "fishpods"
-platform = "spotify" # spotify, itunes, both. defaults to spotify
+platform = "both" # spotify, itunes, both. defaults to spotify
 apls = ""
 out = "Not connected"
 
@@ -71,7 +71,9 @@ elif(platform == "both"):
         try:
             out = os.popen(as_spot).read()
         except:
-            out = "Not Connected To iTunes"
+            out = "Not Connected"
+    if("Not Connected" in out):
+        out = os.popen(as_itunes).read()
     elif(itunesrunning()):
         out = os.popen(as_itunes).read()
     else:
