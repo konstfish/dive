@@ -25,13 +25,16 @@ def spotrunning():
         return False
 
 as_spot = """
-IFS='|' read -r theArtist theName <<<"$(osascript <<<'tell application "Spotify"
-        set theTrack to current track
-        set theArtist to artist of theTrack
-        set theName to name of theTrack
-        return theArtist & "|" & theName
-    end tell')" &&
-echo "$theArtist - $theName"
+osascript <<<'try
+	tell application "Spotify"
+		set theTrack to current track
+		set theArtist to artist of theTrack
+		set theName to name of theTrack
+		return theArtist & " - " & theName
+	end tell
+on error e
+	return "Nothing Playing"
+end try'
 """
 
 as_itunes = """
@@ -60,6 +63,14 @@ on isPlaying()
 end isMusicPlaying'
 """
 
+as_refresh = """
+osascript <<<'
+try
+    tell application "Übersicht" to refresh widget id "dive-widgets-airpods-coffee"
+on error e
+	return
+end try'
+"""
 
 # run
 
@@ -90,9 +101,9 @@ else:
         out = "Not Connected To Spotify"
 
 conn = os.popen("system_profiler SPBluetoothDataType | grep " + device_name + " -A 7").read()
-os.system('osascript -e \'tell application "Übersicht" to refresh widget id "dive-widgets-airpods-coffee"\'')
+os.system(as_refresh)
 
-if("Connected: No" in conn):
+if("Connected: No" in conn or conn == ""):
     print("<div class='container adjust'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
 else:
     print("<div class='container adjust' style='padding-left: 202px; !important'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
