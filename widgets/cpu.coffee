@@ -3,7 +3,7 @@ command: "ESC=`printf \"\e\"`; ps -A -o %cpu | awk '{s+=$1} END {printf(\"%.2f\"
 refreshFrequency: 20000
 
 render: (output) ->
-  "<div class='container cpu'>
+  "<div class='container'>
       <div class='bend medium ylw-dark'>
         <div class='icon ylw-light'>
           <img src='dive/ics/6cpu.png' height='12'>

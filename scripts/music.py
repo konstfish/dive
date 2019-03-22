@@ -104,6 +104,6 @@ conn = os.popen("system_profiler SPBluetoothDataType | grep " + device_name + " 
 os.system(as_refresh)
 
 if("Connected: No" in conn or conn == ""):
-    print("<div class='container adjust'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
+    print("<div class='container adjust' style='padding-left: 75px; !important'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
 else:
-    print("<div class='container adjust' style='padding-left: 202px; !important'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
+    print("<div class='container adjust' style='padding-left: 215px; !important'><div class='bend bend-lft'><div class='icon icon-lft'><img src='dive/ics/14note.png' height='10px'></div><div class='content content-lft'><span style=\'white-space: nowrap\'>" + out + "</span> </div></div></div></div>")
