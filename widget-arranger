@@ -1,0 +1,115 @@
+#!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
+
+# github.com/konstfish
+
+"""
+default spacing: 10px
+
+widget widths:
+
+battery lmao            65px
+connection adjust       30px
+cpu medium              80px
+down big                85px
+up big                  85px
+mem mega                90px
+temp medium             90px
+time med                80px
+vpn small               60px
+"""
+
+print("[!] widget-arranger script")
+
+dict = {
+    "time": 80,
+    "connection": 65,
+    "battery": 75,
+    "temp": 90,
+    "mem": 80,
+    "cpu": 85,
+    "up-down": 170,
+    "vpn": 35
+}
+
+"""
+
+TODO - snippet to remove battery
+
+"""
+
+#for entry in dict:
+#    print(entry + " " + str(dict[entry]))
+
+print("[*] available widgets in default order:")
+for entry in dict:
+    print(entry, end=", ")
+print("\n[*] enter \"!\" to use the default layout")
+
+order = []
+size = len(dict)
+while(len(order) < size):
+    widget = input("[>] widget at position " + str(len(order)) + ": ").replace(" ", "")
+    if(widget == "!"):
+        order = []
+        for entry in dict:
+            order.append(entry)
+    elif(widget in dict):
+        if(widget in order):
+            print("[*] widget already used")
+        else:
+            order.append(widget)
+    else:
+        print("[*] widget not found")
+
+print("[!] order: " + str(order))
+
+css = """
+/* generated with widget-arranger */
+
+/*
+RIGHT
+*/
+
+"""
+spacing = 85
+
+for widget in order:
+    if(widget == "up-down"):
+        css += "#dive-widgets-up-coffee{\n   right: " + str(spacing) + "px;\n   z-index: 1;\n}\n"
+        spacing += 80
+        css += "#dive-widgets-down-coffee{\n   right: " + str(spacing) + "px;\n   z-index: -1;\n}\n"
+        spacing += 70
+    else:
+        css += "#dive-widgets-" + widget + "-coffee{\n   right: " + str(spacing) + "px;\n}\n"
+        spacing += int(dict[widget]) + 10
+
+css += """
+/*
+LEFT
+*/
+
+#dive-widgets-music-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+#dive-widgets-airpods-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+/*
+  BOTTOM (LEFT)
+*/
+
+#dive-widgets-spaces-coffee{
+  padding-left: 10px;
+  float: left;
+  bottom: 28px;
+}
+"""
+
+f= open("styles/widgets.css","w+")
+f.write(css)
+f.close()
