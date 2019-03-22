@@ -3,7 +3,7 @@ command: "date +\"%H%:%M\""
 refreshFrequency: 50000
 
 render: (output) ->
-  "<div class='container adjust'>
+  "<div class='container med'>
       <div class='bend org-dark'>
         <div class='icon org-light'>
           <img src='dive/ics/2clock.png' width='12px'>
