@@ -49,6 +49,11 @@
 LEFT
 */
 
+#dive-widgets-vol-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
 #dive-widgets-music-coffee{
   padding-left: 10px;
   float: left;

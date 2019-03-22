@@ -1,6 +1,14 @@
-command: "osascript -e 'get volume settings' | cut -f2 -d':' | cut -f1 -d',';"
+command: "/usr/local/bin/python3 dive/scripts/vol.py"
 
-refreshFrequency: 1000000
+refreshFrequency: 10000
 
 render: (output) ->
-  ""
+  "<div class='container lmao'>
+      <div class='bend bend-lft prp-dark'>
+        <div class='icon icon-lft prp-light'>
+          #{output}
+        </div>
+      </div>
+    </div>
+   </div>
+  "
