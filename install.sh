@@ -7,6 +7,7 @@ git clone https://github.com/lavoiesl/osx-cpu-temp
 cd osx-cpu-temp
 make
 mv osx-cpu-temp ../scripts
+chmod -R 755 scripts
 cd ..
 
 echo "[*] installing ifstat"
@@ -16,13 +17,13 @@ brew install ifstat
 echo "[*] installing python3"
 brew install python
 
-echo "[>] Airpod Alias: \c"
+printf "[>] Airpod Alias: "
 read headset
 
-echo "[>] Network Adapter Name: \c"
+printf "[>] Network Adapter Name: "
 read nwadap
 
-echo "[>] VPN Name: \c"
+printf "[>] VPN Name: "
 read vpn
 
 echo "[*] writing data.json"
@@ -32,7 +33,7 @@ echo "  \"vpn_name\":\""$vpn"\"\n}" >> data.json
 
 echo "[>] Set Up Widget Order? (y/n): \c"
 read order
-if [ order = "y" ]
+if [ $order == "y" ]
   then
     ./widget-arranger
   else
