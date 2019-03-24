@@ -7,8 +7,8 @@ git clone https://github.com/lavoiesl/osx-cpu-temp
 cd osx-cpu-temp
 make
 mv osx-cpu-temp ../scripts
-chmod -R 755 scripts
 cd ..
+chmod -R 755 scripts
 
 echo "[*] installing ifstat"
 brew install ifstat
