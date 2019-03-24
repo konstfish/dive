@@ -30,12 +30,12 @@ printf "[>] VPN Name: "
 read vpn
 
 echo "[*] writing data.json"
-echo "{\n  \"bt_headset\":\""$headset"\"," > data.json
+echo "{  \"bt_headset\":\""$headset"\"," > data.json
 echo "  \"nw_adapter\":\""$nwadap"\"," >> data.json
 echo "  \"vpn_name\":\""$vpn"\"," >> data.json
-echo "  \"platform\":\""$platform"\"\n}" >> data.json
+echo "  \"platform\":\""$platform"\"}" >> data.json
 
-echo "[>] Set Up Widget Order? (y/n): \c"
+printf "[>] Set Up Widget Order? (y/n): \c"
 read order
 if [ $order == "y" ]
   then
