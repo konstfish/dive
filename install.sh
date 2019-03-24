@@ -23,13 +23,17 @@ read headset
 printf "[>] Network Adapter Name: "
 read nwadap
 
+printf "[>] Music Platform (Spotify/iTunes/both): "
+read platform
+
 printf "[>] VPN Name: "
 read vpn
 
 echo "[*] writing data.json"
 echo "{\n  \"bt_headset\":\""$headset"\"," > data.json
 echo "  \"nw_adapter\":\""$nwadap"\"," >> data.json
-echo "  \"vpn_name\":\""$vpn"\"\n}" >> data.json
+echo "  \"vpn_name\":\""$vpn"\"," >> data.json
+echo "  \"platform\":\""$platform"\"\n}" >> data.json
 
 echo "[>] Set Up Widget Order? (y/n): \c"
 read order

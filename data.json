@@ -1,5 +1,6 @@
 {
     "bt_headset":"fishpods",
     "nw_adapter":"USB10",
-    "vpn_name":"konst.fish"
+    "vpn_name":"konst.fish",
+    "platform":"both"
 }
