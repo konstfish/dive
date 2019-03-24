@@ -1,10 +1,12 @@
 #!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
 
 import os,sys
 import subprocess
+from parser import *
 
-device_name = "fishpods"
-platform = "both" # spotify, itunes, both. defaults to spotify
+device_name = get_headset()
+platform = get_platform() # spotify, itunes, both. defaults to spotify
 apls = ""
 out = "Not connected"
 
@@ -74,12 +76,12 @@ end try'
 
 # run
 
-if(platform == "itunes"):
+if(platform.lower() == "itunes"):
     if(itunesrunning()):
         out = os.popen(as_itunes).read()
     else:
         out = "Not Connected To iTunes"
-elif(platform == "both"):
+elif(platform.lower() == "both"):
     if(spotrunning()):
         try:
             out = os.popen(as_spot).read()

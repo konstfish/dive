@@ -1,2 +1,4 @@
 .DS_Store
 osxcputmp
+scripts/parser.pyc
+scripts/__pycache__

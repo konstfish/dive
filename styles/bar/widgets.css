@@ -33,7 +33,8 @@
 }
 
 #dive-widgets-cpu-coffee{
-  right: 425px;
+  z-index: 2;
+  right: 430px;
 }
 
 #dive-widgets-up-coffee{

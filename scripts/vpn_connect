@@ -1,6 +1,7 @@
 #!/bin/bash
 
 VPN_NAME="konstfish"
+#python3 -c "import sys, json; print(json.load("../data.json")['name'])"
 scutil --nc show $VPN_NAME | grep Connected > /dev/null
 if [ $? -eq 0 ]; then
   scutil --nc stop $VPN_NAME

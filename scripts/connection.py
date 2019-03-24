@@ -1,8 +1,10 @@
-#!/usr/bin/python
+#!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
 
 import os, sys
+from parser import *
 
-adapter = "USB 10/100/1000 LAN"
+adapter = get_adapter()
 out = os.popen('dive/scripts/./interfaces').read()
 
 if(adapter in out):
