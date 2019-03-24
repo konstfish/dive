@@ -17,6 +17,7 @@ brew install ifstat
 echo "[*] installing python3"
 brew install python
 
+echo "[!] input widget details"
 printf "[>] Airpod Alias: "
 read headset
 
@@ -35,7 +36,7 @@ echo "  \"nw_adapter\":\""$nwadap"\"," >> data.json
 echo "  \"vpn_name\":\""$vpn"\"," >> data.json
 echo "  \"platform\":\""$platform"\"}" >> data.json
 
-printf "[>] Set Up Widget Order? (y/n): \c"
+printf "[>] Set Up Widget Order? (y/n): "
 read order
 if [ $order == "y" ]
   then
