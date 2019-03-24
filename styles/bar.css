@@ -1,4 +1,5 @@
 @import url("colors.css");
+@import url("bar-widgets.css");
 
 /*
   DIVE WIDGET CSS SHEET
@@ -7,6 +8,7 @@
 .container{
   padding-top: 3px;
 	width: 100px;
+  float: right;
   position: absolute;
 }
 
@@ -57,22 +59,20 @@
 .bend {
 	width: 100%;
 	height: 22px;
-	transform: skew(20deg);
-	background-color: var(--main-tilebg-color);
+	background-color: var(--main-bg-color) !important;
 }
 
 .bend-lft {
-	transform: skew(-20deg) !important;
 }
 
 .content {
 	padding-top: 4px;
   padding-left: 32px;
 	padding-right: 5px;
-	transform: skew(-20deg);
 
 	font-size: 15px;
   color: var(--main-txt-color);
+  background-color: var(--main-bg-color) !important;
 	font-family: 'scientifica';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -80,28 +80,25 @@
 }
 
 .content-lft{
-  transform: skew(20deg) !important;
 }
 
 .icon{
 	height: 100%;
 	width: 24px;
-	background-color: var(--main-tile-color);
+	background-color: var(--main-bg-color) !important;
 	float:left;
 }
 
 .icon img{
 	padding-top: 5px;
 	padding-left: 7.25px;
-
-	transform: skew(-20deg);
 }
 
 .icon-lft img{
-  transform: skew(20deg);
 }
 
 img{
+  filter: invert(100%);
   image-rendering: pixelated;
 }
 
@@ -111,8 +108,9 @@ img{
 }
 
 .background{
+  margin: 0 auto;
   margin-top: 3px;
-  width: 100%;
-  background-color: #FFFFFF;
+  width: 99%;
+  background-color: var(--main-bg-color);
   height: 22px;
 }
