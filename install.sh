@@ -13,10 +13,10 @@ cd ..
 echo "[*] installing ifstat"
 brew install ifstat
 
-
 echo "[*] installing python3"
 brew install python
 
+echo "[!] please enter widget details"
 printf "[>] Airpod Alias: "
 read headset
 
@@ -39,9 +39,9 @@ echo "[>] Set Up Widget Order? (y/n): \c"
 read order
 if [ $order == "y" ]
   then
-    ./widget-arranger
+    utils/./widget-arranger
   else
-    echo "[!] you can set this up later by running ./widget-arranger"
+    echo "[!] you can set this up later by running utils/./widget-arranger"
 fi
 
 echo "[*] moving files"
