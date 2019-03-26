@@ -1,0 +1,83 @@
+:root {
+  --music-padding: 60px;
+  --airpods-padding: 60px;
+  --mairpod-padding: 190px;
+}
+
+/*
+
+	ICON POSITIONS
+
+  spacing = 10px
+
+*/
+
+#dive-widgets-time-coffee{
+  right: 80px;
+}
+
+#dive-widgets-connection-coffee{
+  z-index: -1;
+  right: 112px;
+}
+
+#dive-widgets-battery-coffee{
+  right: 175px;
+}
+
+#dive-widgets-temp-coffee{
+  right: 255px;
+}
+
+#dive-widgets-mem-coffee{
+  right: 345px;
+}
+
+#dive-widgets-cpu-coffee{
+  z-index: 2;
+  right: 430px;
+}
+
+#dive-widgets-up-coffee{
+  right: 510px;
+  z-index: 1;
+}
+
+#dive-widgets-down-coffee{
+  right: 590px;
+  z-index: -1;
+}
+
+#dive-widgets-vpn-coffee{
+  right: 660px;
+}
+
+
+/*
+LEFT
+*/
+
+#dive-widgets-vol-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+#dive-widgets-music-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+#dive-widgets-airpods-coffee{
+  padding-left: 10px;
+  float: left;
+}
+
+/*
+  BOTTOM (LEFT)
+*/
+
+#dive-widgets-spaces-coffee{
+  padding-left: 10px;
+  float: left;
+  bottom: 28px;
+}
