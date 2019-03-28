@@ -102,7 +102,7 @@ else:
     else:
         out = "Not Connected To Spotify"
 
-conn = os.popen("system_profiler SPBluetoothDataType | grep " + device_name + " -A 7").read()
+conn = os.popen("system_profiler SPBluetoothDataType 2>/dev/null | grep \'" + device_name + "\' -A 7").read()
 os.system(as_refresh)
 
 if("Connected: No" in conn or conn == ""):
