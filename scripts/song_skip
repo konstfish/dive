@@ -1,0 +1,16 @@
+#!/usr/local/bin/python3
+# -*- coding: utf-8 -*-
+
+import os,sys
+import subprocess
+from parser import *
+
+as_skip="""
+osascript <<<'tell application "iTunes" next track end tell'
+"""
+
+as_re="""
+osascript -e 'tell application "Übersicht" to refresh widget id "dive-widgets-music-coffee"'
+"""
+
+os.popen(as_skip)

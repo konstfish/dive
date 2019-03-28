@@ -94,15 +94,12 @@
 .icon img{
 	padding-top: 5px;
 	padding-left: 7.25px;
-
+  filter: invert(0%) !important;
 	transform: skew(-20deg);
 }
 
-.icon-lft img{
-  transform: skew(20deg);
-}
-
 img{
+  filter: invert(100%);
   image-rendering: pixelated;
 }
 

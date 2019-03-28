@@ -1,9 +1,9 @@
 command: 'dive/scripts/./vpn'
 
-refreshFrequency: 30000
+refreshFrequency: 7500
 
 render: (output) ->
-  "<div class='container small' id='1'>
+  "<div class='container small' id='vpn'>
       <div class='bend grn-dark'>
         <div class='icon grn-light'>
           <img src='dive/ics/7vpn.png' height='12px'>
@@ -15,5 +15,5 @@ render: (output) ->
     </div>
    </div>"
 
-#afterRender: (domEl) ->
-#  $(domEl).on 'click', '#1', => @run "/dive/scripts/./vpn_connect"
+afterRender: (domEl) ->
+  $(domEl).on 'click', '#vpn', => @run 'dive/scripts/./vpn_connect'
