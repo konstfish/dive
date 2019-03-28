@@ -17,16 +17,16 @@ echo "[*] installing python3"
 brew install python
 
 echo "[!] please enter widget details"
-printf "[>] Airpod Alias: "
+printf "[>] airpod alias: "
 read headset
 
-printf "[>] Network Adapter Name: "
+printf "[>] network adapter name: "
 read nwadap
 
-printf "[>] Music Platform (Spotify/iTunes/both): "
+printf "[>] music platform (spotify/itunes/both): "
 read platform
 
-printf "[>] VPN Name: "
+printf "[>] VPN name: "
 read vpn
 
 echo "[*] writing data.json"
@@ -34,8 +34,9 @@ echo "{  \"bt_headset\":\""$headset"\"," > data.json
 echo "  \"nw_adapter\":\""$nwadap"\"," >> data.json
 echo "  \"vpn_name\":\""$vpn"\"," >> data.json
 echo "  \"platform\":\""$platform"\"}" >> data.json
+printf "[!] you can change these values later in data.json"
 
-printf "[>] Set Up Widget Order? (y/n): "
+printf "[>] set up widget order? (y/n): "
 read order
 if [ $order == "y" ]
   then
