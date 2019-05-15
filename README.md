@@ -18,7 +18,7 @@ git clone https://github.com/konstfish/dive && cd dive
 ./install.sh
 ```
 
-How to create invisible folders: [ICONS](ICONS.md)
+[How to create invisible folders](ICONS.md)
 
 ## Widgets
 

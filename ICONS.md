@@ -9,10 +9,14 @@
  5. Select the icon on the top left of the Info Sheet
  ![demo](etc/invisible_icons/1.png)
  6. Press command + V
+
  ![demo](etc/invisible_icons/2.png)
+
  7. Select the folder & rename it to " " (Keep in mind that you will have to add more spaces with every new folder)
  ![demo](etc/invisible_icons/3.png)
  8. Done!
+
+ 
  ![demo](etc/invisible_icons/4.png) ![demo](etc/invisible_icons/5.png)
 
 #### These will show up in Finder!
