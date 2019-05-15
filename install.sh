@@ -34,7 +34,8 @@ echo "{  \"bt_headset\":\""$headset"\"," > data.json
 echo "  \"nw_adapter\":\""$nwadap"\"," >> data.json
 echo "  \"vpn_name\":\""$vpn"\"," >> data.json
 echo "  \"platform\":\""$platform"\"}" >> data.json
-printf "[!] you can change these values later in data.json"
+
+echo "[!] you can change these values later in data.json"
 
 #printf "[>] set up widget order? (y/n): "
 #read order
@@ -49,5 +50,8 @@ echo "[*] moving files"
 
 mkdir -p $HOME/Library/Application\ Support/Übersicht/widgets/dive
 mv * $HOME/Library/Application\ Support/Übersicht/widgets/dive/
+
+cd ..
+sudo rm -r dive
 
 echo "[!] done!"
