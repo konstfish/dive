@@ -66,6 +66,10 @@
 	transform: skew(-20deg) !important;
 }
 
+.icon-lft img{
+	transform: skew(20deg) !important;
+}
+
 .content {
 	padding-top: 4px;
   padding-left: 32px;

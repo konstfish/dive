@@ -36,14 +36,14 @@ echo "  \"vpn_name\":\""$vpn"\"," >> data.json
 echo "  \"platform\":\""$platform"\"}" >> data.json
 printf "[!] you can change these values later in data.json"
 
-printf "[>] set up widget order? (y/n): "
-read order
-if [ $order == "y" ]
-  then
-    utils/./widget-arranger
-  else
-    echo "[!] you can set this up later by running utils/./widget-arranger"
-fi
+#printf "[>] set up widget order? (y/n): "
+#read order
+#if [ $order == "y" ]
+#  then
+#    utils/./widget-arranger
+#  else
+#    echo "[!] you can set this up later by running utils/./widget-arranger"
+#fi
 
 echo "[*] moving files"
 
